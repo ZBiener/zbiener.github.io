@@ -1,0 +1,14 @@
+ ## Extra Customization Data. 
+
+biener:
+  name: Zvi Biener
+  title: Associate Professor
+  affiliation: University of Cincinnati
+  address: 
+    - 259D McMicken Hall, ML 3401
+    - Cincinnati OH, 45219
+  orcid: 0000-0002-3863-205X
+  cv: files/biener-cv
+  telephone: 513-818-2984
+  email: zvi.biener@uc.edu
+  philpapers_url: 'https://philpeople.org/profiles/zvi-biener/'

@@ -1,0 +1,35 @@
+---
+---
+
+<a class="title" data-toggle="collapse" data-target=".{{ entry.key }}.collapse">{{ entry.title }}</a><br>
+
+<div id="{{key}}-fullentry" class="collapse {{ entry.key }} fullentry show">
+
+{{ entry.eventdate | date: " %b %d, %Y" }}.
+{% if entry.eventtitle %}<i>{{ entry.eventtitle }}</i>.{% endif %}
+{% if entry.venue %}{{ entry.venue }}.{% endif %}{% if entry.invited %}*{% endif %}<br>
+{% if entry.note %}{{ entry.note }}.{% endif %}
+
+<!-- {{counter(bibitem)}} -->
+
+    <div id="{{key}}-links" class="biblinks clearfix">
+      <ul>
+        {% if link %}
+        <li><a data-toggle="collapse"  data-target=".collapse.{{key}}-slides">Slides</a></li>
+        {% endif %}
+        {% if entry.abstract %}
+        <li><a data-toggle="collapse"  data-target=".collapse.{{key}}-abstract">Abstract</a></li>
+        {% endif %}
+      </ul>
+    </div>
+    
+    <div class="item_details">
+        {% if entry.abstract %}
+        <div id="{{key}}-abstract" class="abstract collapse show {{key}}-abstract">
+        <blockquote>{% if pic != "false" %}<img src="{{ pic }}">{% endif %}{{entry.abstract}}</blockquote>
+        </div>
+        {% endif %}
+    
+    </div>
+    <br>
+</div>

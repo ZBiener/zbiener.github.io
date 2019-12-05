@@ -1,0 +1,115 @@
+site: Zvi Biener
+title: Zvi Biener
+
+url: https://zbiener.github.io
+baseurl: 
+
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+  posts:
+    output: true
+    permalink: /blog/:slug
+  projects:
+    output: true
+    permalink: /projects/:slug/
+
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+markdown: kramdown
+
+kramdown:
+  input: kramdown
+  syntax_highlighter: rouge
+  
+sass:
+  style: expanded
+
+plugins:
+  - jekyll-paginate-v2
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll/scholar
+ 
+feed:
+  excerpt_only: false
+
+# Additions:
+
+# --- Jekyll Scholar --- #
+
+scholar:
+    style: /_data/chicago-cv.csl
+    source: /_data/
+    repository: files
+    bibliography: publications.bib
+    query: "@*"
+    replace_strings: true
+    use_raw_bibtex_entry: true
+    sort_by: eventdate, date
+    order: descending
+#   Uncomment below these for a simple, grouped bibliography. The current template uses
+#  a reverse counter, so so cannot use these build-in Jekyll-scholar features.
+#    group_by: type
+#    type_order: [book,article,techreport]
+#    type_aliases: { incollection: article, inproceeding}
+#    type_names: { book: Edited Books, article: Articles }
+
+
+
+
+
+# --- Paginate v2 Scholar --- #
+
+
+# Due to us using the categories for posts then it is advisable to explicitly specify a 
+# permalink structure for the site. Otherwise Jekyll attempts to organize the pages in folders
+# by the category names and it doesn't understand multi-categories to well :/
+#permalink: /:year/:month/:title.html
+#permalink: pretty
+
+pagination:
+  enabled: true
+  per_page: 15  
+  permalink: '/page/:num/'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - _LICENSE
+  - _README.md
+  - website-todo.md
+  - node_modules
+  - gulpfile.js
+  - .git
+  - journal.js
+  - custom_js.js

@@ -1,0 +1,12 @@
+---
+---
+
+<a class="title" data-toggle="collapse" data-target=".{{ entry.key }}.collapse">{{ entry.title }}</a>
+
+<div class="item_details {{ entry.key }} collapse fullentry show">
+    <p class="subtitle">{% if entry.number %}{{ entry.number  | downcase }}&nbsp;{% endif %}{% if entry.eventdate %}({{ entry.eventdate }}){% endif %}{% if entry.note %}{{ entry.note }}{% endif %}</p>
+    {% if entry.abstract %}
+    <blockquote>{% if pic != "false" %}<img src="{{ pic }}">{% endif %}{{entry.abstract}}</blockquote>
+    {% endif %}
+</div>
+
