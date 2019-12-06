@@ -2,7 +2,11 @@
 layout: default
 title: Page Not Found
 description: Sorry – the page you're looking for doesn't exist.
-image: /images/demo/home.jpg
+image: /images/404.jpg
+footer_js: |
+   if ( $(window).width() < 1024 ) { 
+        switchHeader('default');
+    };
 ---
 
 <section class="intro">

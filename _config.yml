@@ -112,8 +112,11 @@ exclude:
   - gulpfile.js
   - .git
   - js/journal.js
-  - js.custom_js.js
+  - js/custom_js.js
+  - js/config.codekit3
+  - js/plugins
   - Rakefile
   - "*.xcf"
   - package.json
   - package-lock.json
+  - .ruby-version

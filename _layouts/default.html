@@ -63,6 +63,10 @@
 	<!-- Extra Header JS Code -->
 	{{ site.data.settings.advanced_settings.header_js }}
 	{% endif %}
+
+	{% if page.header_js %}
+	<script>{{ page.header_js }}</script>
+	{% endif %}
 	
 </head>
 
@@ -96,6 +100,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="{{ '/js/journal-min.js' | relative_url }}"></script>
 	<script src="{{ '/js/custom_js-min.js' | relative_url }}"></script>
+
+	{% if page.footer_js %}
+	<script>{{ page.footer_js }}</script>
+	{% endif %}
 
 	{% if site.data.settings.advanced_settings.footer_js %}
 	<!-- Extra Footer JS Code -->
