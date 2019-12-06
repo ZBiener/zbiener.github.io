@@ -8,3 +8,5 @@ categories:
   - Xiaomi
 ---
 
+I love automating... everything. 
+So, I got 
