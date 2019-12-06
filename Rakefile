@@ -31,6 +31,11 @@ namespace :git do
     end
   end
 
+  desc "Write deploy .gitignore"
+  task: create_gitignore do
+    touch .gitignore
+  end
+
   desc "Deploy to remote origin"
   task :deploy => [:check_branch, :check_git] do
     puts "Building Jekyll site"
