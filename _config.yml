@@ -114,3 +114,4 @@ exclude:
   - journal.js
   - custom_js.js
   - Rakefile
+  - *.xcf
