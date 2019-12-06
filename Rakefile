@@ -1,3 +1,4 @@
+# run by: "rake git:deploy"
 namespace :git do
   SOURCE_BRANCH = "source"
   DEPLOY_BRANCH = "master"
