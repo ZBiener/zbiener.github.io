@@ -111,7 +111,9 @@ exclude:
   - node_modules
   - gulpfile.js
   - .git
-  - journal.js
-  - custom_js.js
+  - js/journal.js
+  - js.custom_js.js
   - Rakefile
   - "*.xcf"
+  - package.json
+  - package-lock.json
