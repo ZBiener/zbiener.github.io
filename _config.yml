@@ -113,3 +113,4 @@ exclude:
   - .git
   - journal.js
   - custom_js.js
+  - Rakefile
