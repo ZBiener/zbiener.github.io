@@ -27,6 +27,7 @@ defaults:
       path: ""
       type: "pages"
     values:
+      commnts: true
       layout: "page"
   -
     scope:
