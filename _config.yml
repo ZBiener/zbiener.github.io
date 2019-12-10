@@ -3,6 +3,7 @@ title: Zvi Biener
 
 url: https://zbiener.github.io
 baseurl: 
+disqus: zbiener
 
 collections:
   pages:
@@ -27,13 +28,13 @@ defaults:
       path: ""
       type: "pages"
     values:
-      commnts: true
       layout: "page"
   -
     scope:
       path: ""
       type: "posts"
     values:
+      comments: true
       layout: "post"
   -
     scope:
