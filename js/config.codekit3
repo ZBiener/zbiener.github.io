@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "31934",
 "files": {
+	"/build/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/.gitignore",
+		"oF": 0
+		},
 	"/custom_js-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -49,6 +57,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/journal-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/plugins/breakpoints-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/plugins/breakpoints-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -152,7 +171,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_magenta",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 597636047.54352796
+	"lastBuiltDate": 597705004.00411201
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

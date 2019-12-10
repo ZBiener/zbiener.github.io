@@ -30,8 +30,8 @@
 	var docTitle = document.title;
 	var History = window.History;
 	var featuredImage = $('.page__content').attr('data-image');
-	if ( $(window).width() < 1024 ) { featuredImage = featuredImage.replace(".", "_wide." )};
-	
+	//if ( $(window).width() < 1024 ) { featuredImage = featuredImage.replace(".", "_wide." )};
+
 	// State change event
 	History.Adapter.bind(window,'statechange',function(){
 		var state = History.getState();
@@ -72,7 +72,6 @@
 				// Set featured image
 				var newFeaturedImage = $('.page__content').attr('data-image');
 				if ( $(window).width() < 1024 ) { newFeaturedImage = newFeaturedImage.replace(".", "_wide." )};
-
 				// Run page functions
 				pageFunctions();
 
@@ -159,7 +158,6 @@
 
 	function pageFunctions() {
 
-
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Show content
 
 		// Wait until first image has loaded
@@ -171,7 +169,6 @@
 			// Hide the menu
 			$('body').removeClass('menu--open');
 		});
-
 
 
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Active links

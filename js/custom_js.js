@@ -3,75 +3,8 @@
 
 var offset = 0;
 var timeout = 150;
+
 //Listen for click events, but only on toggle triggers
-window.addEventListener('click', (ev) => {
-    const triggers = Array.from(document.querySelectorAll('[data-toggle="collapse"]'));
-    const showAllTrigger = Array.from(document.querySelectorAll('[data-toggle="showall"], [data-toggle="hideall"]'));
-
-    const elm = ev.target;
-    if (triggers.includes(elm)) {
-        const selector = elm.getAttribute('data-target');
-        collapse(selector, 'toggle');
-        if (elm.classList.contains('minus')) {
-            setTimeout(function() {
-                elm.classList.remove('minus');
-            }, timeout);
-
-        } else {
-            elm.classList.add('minus');
-        }
-
-    }
-    // terrible logic, for publications page
-    if (showAllTrigger.includes(elm)) {
-        var scrollTop = $(window).scrollTop();
-            var windowHeight = $(window).height();      
-            var foundFirst =  true;
-
-            offset = ( $(".hackmenu").offset().top - $(window).scrollTop() )
-            //console.log(offset);
-        if (elm.getAttribute('data-toggle') == 'showall') {
-            
-            //const selector = elm.getAttribute('data-target');
-            //collapse(selector, 'show');
-            collapse('.collapse.editedbooks, .collapse.articles, .collapse.shortarticles, .collapse.talks, .collapse.abstract, .collapse.fullentry, .collapse.project, .collapse.post, .collapse.item_details, .collapse.grad, .collapse.undergrad' , 'show');
-            elm.setAttribute('data-toggle', 'hideall');
-
-        } else {
-            const selector = elm.getAttribute('data-target');
-            collapse(selector, 'hide');
-            collapse('.collapse.project', 'hide');
-            elm.setAttribute('data-toggle', 'showall');
-            elm.set;
-
-        }
-        
-       
-
-        setTimeout(function() {
-             window.scrollTo(0, 0);
-             var current = $(".hackmenu").offset().top
-             window.scrollBy(0, (current - offset   ) );
-         }, 300);
-
-   
-    }
-}, false);
-
-const fnmap = {
-    'toggle': 'toggle',
-    'show': 'add',
-    'hide': 'remove'
-};
-const collapse = (selector, cmd) => {
-    const targets = Array.from(document.querySelectorAll(selector));
-    targets.forEach(target => {
-        target.classList[fnmap[cmd]]('show');
-       // target.classList[fnmap[cmd]]('header-switch');
-        isinview();
-    });
-};
-
 
 function checkforDoubleHeader() {
         if ( $('.header-image--on').length > 1 ) {
@@ -85,7 +18,6 @@ function checkforDoubleHeader() {
 
 
 function switchHeader(el) {
-    
     var imageLink = document.createElement("a");
 
     if ( $('.header-image.header-image--on').css('background-image') != undefined ) {
@@ -100,12 +32,12 @@ function switchHeader(el) {
     } else if ( el.hasAttribute('data-image') ) {
         var newFeaturedImage = el.getAttribute('data-image');
     }  
+    
+    if ( $(window).width() < 1024 ) { newFeaturedImage = newFeaturedImage.replace(".", "_wide." )};
 
         if (newFeaturedImage !== featuredImage) {
 
             featuredImage = newFeaturedImage;
-
-                if ( $(window).width() < 1024 ) { featuredImage = featuredImage.replace(".", "_wide." )};
 
                 // Change and animate featured image
                 $('.header-image:not(.header-image--on)').css('background-image', 'url(' + featuredImage + ')');
@@ -144,6 +76,7 @@ function isinview() {
 }
 
 $(document).ready(function() {
+    //switchHeader('default');
     isinview();
     $(window).on('scroll', function() {
         $.throttle(1000, isinview());
@@ -151,11 +84,69 @@ $(document).ready(function() {
 });
 
 
+window.addEventListener('click', (ev) => {
+    const triggers = Array.from(document.querySelectorAll('[data-toggle="collapse"]'));
+    const showAllTrigger = Array.from(document.querySelectorAll('[data-toggle="showall"], [data-toggle="hideall"]'));
 
-$("div").on('click', '.showall', function() {
-    setTimeout(function() {
-        window.scrollTo(0, 0);
-    }, 400);
-});
+    const elm = ev.target;
+    if (triggers.includes(elm)) {
+        const selector = elm.getAttribute('data-target');
+        collapse(selector, 'toggle');
+        if (elm.classList.contains('minus')) {
+            setTimeout(function() {
+                elm.classList.remove('minus');
+            }, timeout);
 
-  
+        } else {
+            elm.classList.add('minus');
+        }
+
+    }
+    // terrible logic, for selectively collapsing elements page
+    if (showAllTrigger.includes(elm)) {
+        var scrollTop = $(window).scrollTop();
+            var windowHeight = $(window).height();      
+            var foundFirst =  true;
+
+            offset = ( $(".hackmenu").offset().top - $(window).scrollTop() )
+            //console.log(offset);
+        if (elm.getAttribute('data-toggle') == 'showall') {
+            
+            //const selector = elm.getAttribute('data-target');
+            //collapse(selector, 'show');
+            collapse('.collapse.editedbooks, .collapse.articles, .collapse.shortarticles, .collapse.talks, .collapse.abstract, .collapse.fullentry, .collapse.project, .collapse.post, .collapse.item_details, .collapse.grad, .collapse.undergrad' , 'show');
+            elm.setAttribute('data-toggle', 'hideall');
+
+        } else {
+            const selector = elm.getAttribute('data-target');
+            collapse(selector, 'hide');
+            collapse('.collapse.project', 'hide');
+            elm.setAttribute('data-toggle', 'showall');
+            elm.set;
+
+        } 
+
+        // Keeps the undo icon in the same spot, after collapse/expand
+        // But reset view to top
+        setTimeout(function() {
+             window.scrollTo(0, 0);
+             var current = $(".hackmenu").offset().top
+             window.scrollBy(0, (current - offset   ) );
+         }, 300);   
+    }
+}, false);
+
+const fnmap = {
+    'toggle': 'toggle',
+    'show': 'add',
+    'hide': 'remove'
+};
+
+const collapse = (selector, cmd) => {
+    const targets = Array.from(document.querySelectorAll(selector));
+    targets.forEach(target => {
+        target.classList[fnmap[cmd]]('show');
+       // target.classList[fnmap[cmd]]('header-switch');
+        isinview();
+    });
+};
