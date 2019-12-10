@@ -1,20 +1,23 @@
 ---
-title: Home Assistant
+title: Using Home Assistant to Automate Vacuuming
 date: 2019-12-05 
-image: '/images/broom.jpg'
+image: '/images/broom1.jpg'
 excerpt: Home Assistant is an open source home automation platform that puts local control and privacy first. It can be controlled through a browser or though android and iOS apps. I have mine running on a Raspberry Pi.  I use Home Assistant to...
 categories:
   - Home Assistant
   - Xiaomi
 ---
 
-[Home Assistant](https://www.home-assistant.io/) is an open source home automation platform that puts local control and privacy first. It can be controlled through a browser, or though android and iOS apps. It can run on a variety of PCs - I have mine running on a Raspberry Pi.  I use Home Assistant to:
+[Home Assistant](https://www.home-assistant.io/) is an open source home automation platform that puts local control and privacy first. It can be controlled through a browser, or though android and iOS apps. It can run on a variety of PCs - I have mine running on a Raspberry Pi. I've posted my configuration files - just keep reading.
+
+ I use Home Assistant to:
 
 + Control 2 Xiaomi Robot Vacuums.
 + Interact with a 1st gen Simplisafe alarm system to keep track of open doors, windows, and motion.
 + Open/Close my garage door remotely.
 + Keep track of a few Tile trackers.
 + Keep track of phone locations, so it can execute various tasks when everyone leaves the house.
++ Use motion control as a DYI alarm system.
 
 The GUI for the entire set-up looks like this (without any tiles):
 
@@ -29,25 +32,28 @@ I may compose detailed installation guides in the future, but there are many alr
 + Make sure access to the RPi is secure using an SSH key.
 + Install appropriate modules on Hass.io. I have Duck-DNS and SSH server modules for the remote access to work, and Samba module for local file access, an MQTT broker for communication between devices, and an RTL_433 to MQTT bridge to translate radio signals to digital ones (since my old alarm uses radio signals).
 
-This is the basic setup. Now you need to define entities and actions for Home Assistant to manage, as well as a GUI of your choosing. Instead of full-blown tutorials, I wanted to post my configuration files.
+This is the basic setup. Now you need to define entities and actions for Home Assistant to manage, as well as a GUI of your choosing. So... instead of full-blown tutorials, I wanted to post my configuration files.
 
-I'll focus on the vacuums for now. Most of the underlying configuration is found [here](https://github.com/ZBiener/HomeAssistant-Config/blob/master/packages/vacuum.yaml). Like all Home Assistant config files, it is a YAML file that defines sensors, input variables, scripts, and automations. Basically, I create a list of rooms, and a list of conditions under which the vacuums run. In total, the system:
+I'll focus on the vacuums for now. Most of the underlying configuration is found [here](https://github.com/ZBiener/HomeAssistant-Config/blob/master/packages/vacuum.yaml). Like all Home Assistant config files, it is a YAML file that defines sensors, input variables, scripts, and automations. Basically, it creates a list of rooms given a coordinate system, and a list of conditions under which the vacuums run. In total, the system:
 
 + lets me send a vacuum to any given room using the GUI
-+ will run the vacuums when the house is empty, but only once is 36 hours.
++ will run the vacuums when the house is empty, but only once in a 36 hours period.
 + will run the vacuums at specified times if the house hasn't been empty for 36 hours.
-+ Send the vacuums to wait by trashcans when they are full (for emptying)
++ Send the vacuums to wait by after every 3 runs (for emptying).
 
-From the UI, it looks like this:
+The config is easy to follow, if you've dug into Home Assistant a bit. At the very least, it can give you ideas for how to construct similar scripts. Since Home Assistant recently allows for natural language processing, you can probably replicate these without mucking with YAML.
 
-![Vacuum GUI1](/images/vacuum1.jpg){ width=40% }
+From the UI, the functionality looks like this:
 
-![Vacuum GUI2](/images/vacuum2.jpg){ width=40% }
+![Vacuum GUI1](/images/vacuum1.jpg){:width="65%"}
 
-![Vacuum GUI3](/images/vacuum3.jpg){ width=40% }
+![Vacuum GUI2](/images/vacuum2.jpg){:width="65%"}
 
+![Vacuum GUI3](/images/vacuum3.jpg){:width="65%"}
 
+Full details on vacuum properties are provided directly by Home Assistant and look like this:
 
+![Vacuum GUI4](/images/vacuum4.jpg){:width="65%"}
 
 
 
