@@ -1,25 +1,26 @@
 ---
-title: Robot Vacuums and Home Assistant
+title: Home Assistant
 date: 2019-12-05 
 image: '/images/broom.jpg'
-excerpt: Home Assistant is an open source home automation platform that puts local control and privacy first, with web, android, and iOS interfaces. I have mine running on a Raspberry Pi.  I use Home Assistant to...
+excerpt: Home Assistant is an open source home automation platform that puts local control and privacy first. It can be controlled through a browser or though android and iOS apps. I have mine running on a Raspberry Pi.  I use Home Assistant to...
 categories:
   - Home Assistant
   - Xiaomi
 ---
 
-[Home Assistant](https://www.home-assistant.io/) is an open source home automation platform that puts local control and privacy first, , with web, android, and iOS interfaces. I have mine running on a Raspberry Pi.  I use Home Assistant to:
+[Home Assistant](https://www.home-assistant.io/) is an open source home automation platform that puts local control and privacy first. It can be controlled through a browser, or though android and iOS apps. It can run on a variety of PCs - I have mine running on a Raspberry Pi.  I use Home Assistant to:
 
-+ Control 2 Xiaomi Robot Vacuums
-+ Interact with a 1st gen Simplisafe alarm system to keep track of open doors, windows, and motion
-+ Open/Close my garage door remotely
-+ Keep track of a few Tile trackers
++ Control 2 Xiaomi Robot Vacuums.
++ Interact with a 1st gen Simplisafe alarm system to keep track of open doors, windows, and motion.
++ Open/Close my garage door remotely.
++ Keep track of a few Tile trackers.
++ Keep track of phone locations, so it can execute various tasks when everyone leaves the house.
 
 The GUI for the entire set-up looks like this (without any tiles):
 
 ![Home Assistant GUI](/images/vacuum0.jpg){ width=80% }
 
-I may compose installation guides in the future, but there are many already available. The installation is not for the faint-at-heart, but it is getting easier everyday. The overall list of tasks for a proper install is long. You need to:
+I may compose detailed installation guides in the future, but there are many already available. The installation is not for the faint-at-heart, but it is getting easier everyday. The overall list of tasks for a proper install is long. You need to:
 
 + Construct a Raspberry Pi
 + Flash a drive with Hass.io
