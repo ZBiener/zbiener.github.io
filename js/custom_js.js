@@ -85,24 +85,24 @@ function checkforDoubleHeader() {
 
 
 function switchHeader(el) {
-        //console.log(el.outerHTML);
-        if ( el == 'default' ) {
-        var newFeaturedImage = $('.page__content').attr('data-image');
-    } else {
-    // what is the current header image? it is not necessarily the default one.
-        var imageLink = document.createElement("a");
-        if ( $('.header-image.header-image--on').css('background-image') != undefined ) {
+    
+    var imageLink = document.createElement("a");
+
+    if ( $('.header-image.header-image--on').css('background-image') != undefined ) {
         imageLink.href = $('.header-image.header-image--on').css('background-image').match(/url\([\'\"]*(.*?)[\'\"]*\)/)[1];
-            var featuredImage = imageLink.pathname;
-        } else {
-            var featuredImage = $('.page__content').attr('data-image');
-        }
-        if ( el.hasAttribute('data-image') ) {
-            var newFeaturedImage = el.getAttribute('data-image');
-        }
+        var featuredImage = imageLink.pathname;
+    } else {
+        var featuredImage = $('.page__content').attr('data-image');
+    }
+
+    if ( el == 'default' ) {
+        var newFeaturedImage = $('.page__content').attr('data-image');
+    } else if ( el.hasAttribute('data-image') ) {
+        var newFeaturedImage = el.getAttribute('data-image');
     }  
 
         if (newFeaturedImage !== featuredImage) {
+
             featuredImage = newFeaturedImage;
 
                 if ( $(window).width() < 1024 ) { featuredImage = featuredImage.replace(".", "_wide." )};
@@ -122,7 +122,6 @@ function switchHeader(el) {
                     checkforDoubleHeader();
                                                         });
                 
-
         }
 
     }
