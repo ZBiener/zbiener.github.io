@@ -1470,22 +1470,22 @@ section {
     padding: 00px 60px 60px;
   }
 }
-.single h1, .single h2, .single h3, .single h4, .single h5, .single h6, .single p, .single ul, .single ol, .single hr, .single img, .single .blog-post, .single .container, .single .portfolio-item {
+.single h1, .single h2, .single h3, .single h4, .single h5, .single h6, .single p, .single ul, .single ol, .single hr, .single img, .single .blog-post, .single .container, .single .portfolio-item, .single .disqus-block {
   margin-left: auto;
   margin-right: auto;
 }
 @media only screen and (min-width: 1024px) {
-  .single h1, .single h2, .single h3, .single h4, .single h5, .single h6, .single p, .single ul, .single ol, .single hr, .single img, .single .blog-post, .single .container, .single .portfolio-item {
+  .single h1, .single h2, .single h3, .single h4, .single h5, .single h6, .single p, .single ul, .single ol, .single hr, .single img, .single .blog-post, .single .container, .single .portfolio-item, .single .disqus-block {
     max-width: 95%;
   }
 }
 @media only screen and (min-width: 1220px) {
-  .single h1, .single h2, .single h3, .single h4, .single h5, .single h6, .single p, .single ul, .single ol, .single hr, .single img, .single .blog-post, .single .container, .single .portfolio-item {
+  .single h1, .single h2, .single h3, .single h4, .single h5, .single h6, .single p, .single ul, .single ol, .single hr, .single img, .single .blog-post, .single .container, .single .portfolio-item, .single .disqus-block {
     max-width: 92%;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .single h1, .single h2, .single h3, .single h4, .single h5, .single h6, .single p, .single ul, .single ol, .single hr, .single img, .single .blog-post, .single .container, .single .portfolio-item {
+  .single h1, .single h2, .single h3, .single h4, .single h5, .single h6, .single p, .single ul, .single ol, .single hr, .single img, .single .blog-post, .single .container, .single .portfolio-item, .single .disqus-block {
     max-width: 90%;
   }
 }
