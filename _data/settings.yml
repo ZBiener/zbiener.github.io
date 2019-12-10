@@ -170,7 +170,7 @@ font_settings:
 
 
 advanced_settings:
-  ajax_loading: true
+  ajax_loading: false
   analytics_code: |
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56661953-1"></script>
     <script>
