@@ -151,7 +151,8 @@
 	"displayValue": "js",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_magenta",
-	"iconImageWasSetByUser": 0
+	"iconImageWasSetByUser": 0,
+	"lastBuiltDate": 597705004.00411201
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

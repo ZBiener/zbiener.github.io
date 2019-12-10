@@ -77,8 +77,22 @@ gtag('config', 'UA-56661953-1');
 
 
 	<header class="header">
-	
-	<div class="header-image header-image--on" style="background-image: url(/images/MS-ADD-03965-013-00113-422r.jpg);"></div>
+	<style>
+		@media only screen and (max-width: 1024px) {
+			.header-image {
+			background-image: url(/images/MS-ADD-03965-013-00113-422r_wide.jpg);
+			};
+		}
+		
+		@media only screen and (min-width: 1024px) {
+  			.header-image {
+			background-image: url(/images/MS-ADD-03965-013-00113-422r.jpg);
+			}
+		}
+		
+	</style>
+	<div class="header-image header-image--on"></div>
+
 	<div class="header-image"></div>
 
 	<div class="header-overlay"></div>
