@@ -122,6 +122,8 @@ $button-spacing: {{ site.data.settings.font_settings.buttons.letter_spacing }}em
 
 // Header
 $overlay-opacity: {{ site.data.settings.header_settings.overlay_opacity }};
+$wide-overlay-opacity: calc( {{ site.data.settings.header_settings.overlay_opacity }} - 0.3 );
+
 
 //Portfolio
 $portfolio_overlay-opacity: {{ site.data.settings.header_settings.portfolio_overlay_opacity }};
