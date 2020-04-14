@@ -1,0 +1,5 @@
+http://sarahcassady.com/2015/07/17/jekyll-on-github-pages/
+https://github.com/davidensinger/davidensinger.github.io/blob/46ef9188c53dc2da413eb4583ff12b787dd91223/Rakefile
+
+Deploy site with:
+rake git:deploy 
