@@ -4,6 +4,7 @@
 @import url("/css/academicons.min.css");
 @import url("https://fonts.googleapis.com/css?family={{ site.data.settings.font_settings.body_font | replace: ' ', '+' }}:400,400i,600,600i,700,700i,800,800i");
 @import url("https://fonts.googleapis.com/css?family={{ site.data.settings.font_settings.title_font | replace: " ",  }}:400,400i,600,600i,700,700i,800,800i");
+@import url(gruvbox.dark.css);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -1470,22 +1471,22 @@ section {
     padding: 00px 60px 60px;
   }
 }
-.single h1, .single h2, .single h3, .single h4, .single h5, .single h6, .single p, .single ul, .single ol, .single hr, .single img, .single .blog-post, .single .container, .single .portfolio-item, .single .disqus-block {
+.single h1, .single h2, .single h3, .single h4, .single h5, .single h6, .single p, .single ul, .single ol, .single hr, .single img, .single .blog-post, .single .container, .single .portfolio-item, .single .disqus-block, .single .highlighter-rouge, .single table, .single blockquote, .single figure {
   margin-left: auto;
   margin-right: auto;
 }
 @media only screen and (min-width: 1024px) {
-  .single h1, .single h2, .single h3, .single h4, .single h5, .single h6, .single p, .single ul, .single ol, .single hr, .single img, .single .blog-post, .single .container, .single .portfolio-item, .single .disqus-block {
+  .single h1, .single h2, .single h3, .single h4, .single h5, .single h6, .single p, .single ul, .single ol, .single hr, .single img, .single .blog-post, .single .container, .single .portfolio-item, .single .disqus-block, .single .highlighter-rouge, .single table, .single blockquote, .single figure {
     max-width: 95%;
   }
 }
 @media only screen and (min-width: 1220px) {
-  .single h1, .single h2, .single h3, .single h4, .single h5, .single h6, .single p, .single ul, .single ol, .single hr, .single img, .single .blog-post, .single .container, .single .portfolio-item, .single .disqus-block {
+  .single h1, .single h2, .single h3, .single h4, .single h5, .single h6, .single p, .single ul, .single ol, .single hr, .single img, .single .blog-post, .single .container, .single .portfolio-item, .single .disqus-block, .single .highlighter-rouge, .single table, .single blockquote, .single figure {
     max-width: 92%;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .single h1, .single h2, .single h3, .single h4, .single h5, .single h6, .single p, .single ul, .single ol, .single hr, .single img, .single .blog-post, .single .container, .single .portfolio-item, .single .disqus-block {
+  .single h1, .single h2, .single h3, .single h4, .single h5, .single h6, .single p, .single ul, .single ol, .single hr, .single img, .single .blog-post, .single .container, .single .portfolio-item, .single .disqus-block, .single .highlighter-rouge, .single table, .single blockquote, .single figure {
     max-width: 90%;
   }
 }
@@ -1518,18 +1519,6 @@ section {
 .single figure {
   margin: 20px auto;
 }
-@media only screen and (min-width: 768px) {
-  .single blockquote,
-  .single figure {
-    margin: 30px auto;
-  }
-}
-@media only screen and (min-width: 1220px) {
-  .single blockquote,
-  .single figure {
-    margin: 40px auto;
-  }
-}
 .single blockquote p {
   max-width: 90%;
   padding: 0;
@@ -1544,32 +1533,7 @@ section {
 .single .highlighter-rouge,
 .single table {
   margin: 20px auto;
-  width: 100%;
-}
-@media only screen and (min-width: 768px) {
-  .single .highlighter-rouge,
-  .single table {
-    margin: 30px auto;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .single .highlighter-rouge,
-  .single table {
-    max-width: 80%;
-  }
-}
-@media only screen and (min-width: 1220px) {
-  .single .highlighter-rouge,
-  .single table {
-    margin: 40px auto;
-    max-width: 75%;
-  }
-}
-@media only screen and (min-width: 1600px) {
-  .single .highlighter-rouge,
-  .single table {
-    max-width: 70%;
-  }
+  max-width: 80%;
 }
 .single .highlight {
   display: block;
@@ -1590,16 +1554,16 @@ section {
   }
 }
 .single .highlight .highlight {
-  padding: 20px;
+  padding: 10px;
 }
 @media only screen and (min-width: 768px) {
   .single .highlight .highlight {
-    padding: 30px;
+    padding: 15px;
   }
 }
 @media only screen and (min-width: 1220px) {
   .single .highlight .highlight {
-    padding: 40px;
+    padding: 20px;
   }
 }
 .single table {
@@ -1908,373 +1872,6 @@ section {
   }
 }
 
-.highlight .hll {
-  background-color: #ffffcc;
-}
-
-.highlight {
-  background: #f0f0f0;
-}
-
-.highlight .c {
-  color: #60a0b0;
-  font-style: italic;
-}
-
-/* Comment */
-.highlight .err {
-  border: 1px solid #FF0000;
-}
-
-/* Error */
-.highlight .k {
-  color: #007020;
-  font-weight: bold;
-}
-
-/* Keyword */
-.highlight .o {
-  color: #666666;
-}
-
-/* Operator */
-.highlight .ch {
-  color: #60a0b0;
-  font-style: italic;
-}
-
-/* Comment.Hashbang */
-.highlight .cm {
-  color: #60a0b0;
-  font-style: italic;
-}
-
-/* Comment.Multiline */
-.highlight .cp {
-  color: #007020;
-}
-
-/* Comment.Preproc */
-.highlight .cpf {
-  color: #60a0b0;
-  font-style: italic;
-}
-
-/* Comment.PreprocFile */
-.highlight .c1 {
-  color: #60a0b0;
-  font-style: italic;
-}
-
-/* Comment.Single */
-.highlight .cs {
-  color: #60a0b0;
-  background-color: #fff0f0;
-}
-
-/* Comment.Special */
-.highlight .gd {
-  color: #A00000;
-}
-
-/* Generic.Deleted */
-.highlight .ge {
-  font-style: italic;
-}
-
-/* Generic.Emph */
-.highlight .gr {
-  color: #FF0000;
-}
-
-/* Generic.Error */
-.highlight .gh {
-  color: #000080;
-  font-weight: bold;
-}
-
-/* Generic.Heading */
-.highlight .gi {
-  color: #00A000;
-}
-
-/* Generic.Inserted */
-.highlight .go {
-  color: #888888;
-}
-
-/* Generic.Output */
-.highlight .gp {
-  color: #c65d09;
-  font-weight: bold;
-}
-
-/* Generic.Prompt */
-.highlight .gs {
-  font-weight: bold;
-}
-
-/* Generic.Strong */
-.highlight .gu {
-  color: #800080;
-  font-weight: bold;
-}
-
-/* Generic.Subheading */
-.highlight .gt {
-  color: #0044DD;
-}
-
-/* Generic.Traceback */
-.highlight .kc {
-  color: #007020;
-  font-weight: bold;
-}
-
-/* Keyword.Constant */
-.highlight .kd {
-  color: #007020;
-  font-weight: bold;
-}
-
-/* Keyword.Declaration */
-.highlight .kn {
-  color: #007020;
-  font-weight: bold;
-}
-
-/* Keyword.Namespace */
-.highlight .kp {
-  color: #007020;
-}
-
-/* Keyword.Pseudo */
-.highlight .kr {
-  color: #007020;
-  font-weight: bold;
-}
-
-/* Keyword.Reserved */
-.highlight .kt {
-  color: #902000;
-}
-
-/* Keyword.Type */
-.highlight .m {
-  color: #40a070;
-}
-
-/* Literal.Number */
-.highlight .s {
-  color: #4070a0;
-}
-
-/* Literal.String */
-.highlight .na {
-  color: #4070a0;
-}
-
-/* Name.Attribute */
-.highlight .nb {
-  color: #007020;
-}
-
-/* Name.Builtin */
-.highlight .nc {
-  color: #0e84b5;
-  font-weight: bold;
-}
-
-/* Name.Class */
-.highlight .no {
-  color: #60add5;
-}
-
-/* Name.Constant */
-.highlight .nd {
-  color: #555555;
-  font-weight: bold;
-}
-
-/* Name.Decorator */
-.highlight .ni {
-  color: #d55537;
-  font-weight: bold;
-}
-
-/* Name.Entity */
-.highlight .ne {
-  color: #007020;
-}
-
-/* Name.Exception */
-.highlight .nf {
-  color: #06287e;
-}
-
-/* Name.Function */
-.highlight .nl {
-  color: #002070;
-  font-weight: bold;
-}
-
-/* Name.Label */
-.highlight .nn {
-  color: #0e84b5;
-  font-weight: bold;
-}
-
-/* Name.Namespace */
-.highlight .nt {
-  color: #062873;
-  font-weight: bold;
-}
-
-/* Name.Tag */
-.highlight .nv {
-  color: #bb60d5;
-}
-
-/* Name.Variable */
-.highlight .ow {
-  color: #007020;
-  font-weight: bold;
-}
-
-/* Operator.Word */
-.highlight .w {
-  color: #bbbbbb;
-}
-
-/* Text.Whitespace */
-.highlight .mb {
-  color: #40a070;
-}
-
-/* Literal.Number.Bin */
-.highlight .mf {
-  color: #40a070;
-}
-
-/* Literal.Number.Float */
-.highlight .mh {
-  color: #40a070;
-}
-
-/* Literal.Number.Hex */
-.highlight .mi {
-  color: #40a070;
-}
-
-/* Literal.Number.Integer */
-.highlight .mo {
-  color: #40a070;
-}
-
-/* Literal.Number.Oct */
-.highlight .sa {
-  color: #4070a0;
-}
-
-/* Literal.String.Affix */
-.highlight .sb {
-  color: #4070a0;
-}
-
-/* Literal.String.Backtick */
-.highlight .sc {
-  color: #4070a0;
-}
-
-/* Literal.String.Char */
-.highlight .dl {
-  color: #4070a0;
-}
-
-/* Literal.String.Delimiter */
-.highlight .sd {
-  color: #4070a0;
-  font-style: italic;
-}
-
-/* Literal.String.Doc */
-.highlight .s2 {
-  color: #4070a0;
-}
-
-/* Literal.String.Double */
-.highlight .se {
-  color: #4070a0;
-  font-weight: bold;
-}
-
-/* Literal.String.Escape */
-.highlight .sh {
-  color: #4070a0;
-}
-
-/* Literal.String.Heredoc */
-.highlight .si {
-  color: #70a0d0;
-  font-style: italic;
-}
-
-/* Literal.String.Interpol */
-.highlight .sx {
-  color: #c65d09;
-}
-
-/* Literal.String.Other */
-.highlight .sr {
-  color: #235388;
-}
-
-/* Literal.String.Regex */
-.highlight .s1 {
-  color: #4070a0;
-}
-
-/* Literal.String.Single */
-.highlight .ss {
-  color: #517918;
-}
-
-/* Literal.String.Symbol */
-.highlight .bp {
-  color: #007020;
-}
-
-/* Name.Builtin.Pseudo */
-.highlight .fm {
-  color: #06287e;
-}
-
-/* Name.Function.Magic */
-.highlight .vc {
-  color: #bb60d5;
-}
-
-/* Name.Variable.Class */
-.highlight .vg {
-  color: #bb60d5;
-}
-
-/* Name.Variable.Global */
-.highlight .vi {
-  color: #bb60d5;
-}
-
-/* Name.Variable.Instance */
-.highlight .vm {
-  color: #bb60d5;
-}
-
-/* Name.Variable.Magic */
-.highlight .il {
-  color: #40a070;
-}
-
-/* Literal.Number.Integer.Long */
 .contact-form {
   background: #e0e4e7;
   margin: 20px auto;
