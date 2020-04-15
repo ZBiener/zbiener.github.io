@@ -151,7 +151,7 @@ $desktop-width: {{ site.data.settings.column_size.desktop }}%;
 @import "_includes/_content";
 @import "_includes/_socials";
 @import "_includes/_gallery";
-@import "_includes/_syntax";
+//@import "_includes/_syntax";
 @import "_includes/_contact-form";
 
 
@@ -176,3 +176,4 @@ $plus-minus-icon-color: #1562bd;
 @import "_frontpage";
 @import "_customization";
 
+@import "gruvbox.dark.css"
