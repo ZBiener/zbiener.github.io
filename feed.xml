@@ -7,6 +7,17 @@
     <atom:link href="https://zbiener.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Stop wasting paper and save your eyes at the same time.</title>
+        <description>
+          
+          I try to print as little as possible, so I often use a double-page print layout. That way, each printed page includes two logical pages. This is called a 2-up format (you can have 3-up, 4-up, N-up). The problem is that Apple’s N-up feature is pretty bad. You get it...
+        </description>
+        <pubDate>Wed, 15 Apr 2020 00:00:00 -0400</pubDate>
+        <link>https://zbiener.github.io/blog/nup-workflow</link>
+        <guid isPermaLink="true">https://zbiener.github.io/blog/nup-workflow</guid>
+      </item>
+    
+      <item>
         <title>Using Home Assistant to Automate Vacuuming</title>
         <description>
           
