@@ -40,7 +40,7 @@ namespace :git do
 
     puts "Copying #{DESTINATION_FOLDER} to root"
     system "cp -r #{DESTINATION_FOLDER}/* . && rm -rf #{DESTINATION_FOLDER}" 
-    system "find . -name ".DS_Store" -delete"
+    system "find . -name '.DS_Store' -delete"
 
     puts "Adding .nojekyll to root"
     system "touch .nojekyll"
