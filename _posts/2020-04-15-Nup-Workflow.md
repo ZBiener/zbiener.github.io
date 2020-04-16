@@ -1,5 +1,5 @@
 ---
-title: "Waste less paper and save your eyes at the same time."
+title: "Save your eyes while saving paper."
 date: 2020-04-15 
 image: '/images/moveabletype.jpg'
 excerpt: "Use this Automator workflow to print an efficient double-page (2-up) layout."
