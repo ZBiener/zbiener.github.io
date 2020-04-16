@@ -33,7 +33,8 @@ layout: default
      
     <ol class="bibliography nolisting ">
         {% for post in paginator.posts %}
-        <li class="title header-switch-onhover" data-image="{{ post.image }}"  >
+        <!-- <li class="title header-switch-onhover" data-image="{{ post.image }}"  > -->
+        <li class="title" data-image="{{ post.image }}"  >
             <a  href="{{ post.url | relative_url }}" >{{post.title}}</a>
         
         <div class="item_details post collapse show">

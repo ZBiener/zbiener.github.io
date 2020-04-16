@@ -28,6 +28,7 @@ $plus_size: calc(#{$p-small} + 0pt);
         margin-left: -0.5em;
         padding-left: 0.5em;
         counter-increment: bibitem -1;
+        
 
         &:before {
             display: inline-block;
