@@ -28,6 +28,7 @@ You can use follow the instructions below to create an efficient 2-up "Printer P
 
 
 ### &nbsp;
+
 ###Instructions
 
 1. Get a **LaTeX** installation from http://www.tug.org/mactex/. I recommend the "Smaller Download." Install it.
