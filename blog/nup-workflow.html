@@ -291,12 +291,10 @@ gtag('config', 'UA-56661953-1');
 
 <p><strong>Caveat:</strong> This will only work with PDFs. For other formats, first print the document to PDF, and then print the PDF using this plugin. Make this process quicker with a few one-time steps: select the “Edit Menu” in the print services menu (the lower-left drop-down), hit the plus sign, and select an often used folder (I use <strong>Downloads</strong>). From that point on, when you select that print option in the drop-down menu, a PDF will be generated in that folder without going through the “Save As” dialog.</p>
 
-<h3 id="nbsp"> </h3>
-
 <h3 id="instructions">Instructions</h3>
 
 <ol>
-  <li>Get a <strong>LaTeX</strong> installation from http://www.tug.org/mactex/. I recommend the “Smaller Download.” Install it.</li>
+  <li>Get a <strong>LaTeX</strong> installation from http://www.tug.org/mactex/. I recommend the “Smaller Download.” Install it. (Skip if you already have one.)</li>
   <li>Open the <strong>Terminal</strong> app. Type in:</li>
 </ol>
 
@@ -306,6 +304,14 @@ gtag('config', 'UA-56661953-1');
 <p>You’ll be asked for your password.</p>
 
 <ol start="3">
+  <li>Download <a href="/files/Crop and 2-up.workflow.zip" title="Zip file"><strong>this file</strong></a>. Unzip. Double click. You’re done.</li>
+</ol>
+
+<h3 id="under-the-hood">Under the Hood</h3>
+
+<p>If you want to create the workflow from scratch, do this:</p>
+
+<ol>
   <li>Open the <strong>Automator</strong> app. Hit ⌘N to create a new workflow and select <strong>Print Plugin</strong> from next menu.</li>
   <li>Once a blank workflow opens, search the list of actions (on the left-hand side) for <strong>Run Shell Script.</strong> Drag it over to the right-hand side of the screen.</li>
   <li>Inside the Run Shell Script action, paste the following:</li>
@@ -327,12 +333,8 @@ open <span class="nt">-a</span> Preview <span class="nv">$NupPDF</span>
 
 </code></pre></div></div>
 
-<p>It should look like this:</p>
-
-<p><img src="/images/print-2up-automator-workflow.jpg" alt="Automator Workflow" width="75%" /></p>
-
-<ol start="6">
-  <li>That’s it. Save it with a name of your choosing. It will appear in your print dialog drop-down menu.</li>
+<ol start="4">
+  <li>Save the workflow with a name of your choosing. It will appear in your print dialog drop-down menu.</li>
 </ol>
 
 
