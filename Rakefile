@@ -40,14 +40,15 @@ namespace :git do
 
     puts "Copying #{DESTINATION_FOLDER} to root"
     system "cp -r #{DESTINATION_FOLDER}/* . && rm -rf #{DESTINATION_FOLDER}" 
+    system "find . -name ".DS_Store" -delete"
 
     puts "Adding .nojekyll to root"
     system "touch .nojekyll"
 
     puts "Adding .gitignore to root"
-    File.open(File.join('.gitignore'), 'w') do |f|
-  	f.puts ".DS_Store"
-	end
+    #File.open(File.join('.gitignore'), 'w') do |f|
+  	#f.puts ".DS_Store"
+	#end
 
     unless git_clean?
       puts "Pushing to #{DEPLOY_BRANCH}."
