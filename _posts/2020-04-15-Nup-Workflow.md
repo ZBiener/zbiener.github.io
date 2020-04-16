@@ -27,11 +27,9 @@ You can use follow the instructions below to create an efficient 2-up "Printer P
 **Caveat:** This will only work with PDFs. For other formats, first print the document to PDF, and then print the PDF using this plugin. Make this process quicker with a few one-time steps: select the "Edit Menu" in the print services menu (the lower-left drop-down), hit the plus sign, and select an often used folder (I use **Downloads**). From that point on, when you select that print option in the drop-down menu, a PDF will be generated in that folder without going through the "Save As" dialog. 
 
 
-### &nbsp;
-
 ###Instructions
 
-1. Get a **LaTeX** installation from http://www.tug.org/mactex/. I recommend the "Smaller Download." Install it.
+1. Get a **LaTeX** installation from http://www.tug.org/mactex/. I recommend the "Smaller Download." Install it. (Skip if you already have one.)
 2. Open the **Terminal** app. Type in:
 
 ~~~ bash
@@ -41,6 +39,13 @@ sudo tlmgr install pdfcrop pdfjam
 You'll be asked for your password.
 
 {:start="3"}
+3. Download [**this file**](/files/Crop and 2-up.workflow.zip "Zip file"). Unzip. Double click. You're done.
+
+
+### Under the Hood
+
+If you want to create the workflow from scratch, do this:
+
 3. Open the **Automator** app. Hit ⌘N to create a new workflow and select **Print Plugin** from next menu.
 4. Once a blank workflow opens, search the list of actions (on the left-hand side) for **Run Shell Script.** Drag it over to the right-hand side of the screen.
 5. Inside the Run Shell Script action, paste the following:
@@ -62,9 +67,5 @@ open -a Preview $NupPDF
 
 ~~~
 
-It should look like this:
-
-![Automator Workflow](/images/print-2up-automator-workflow.jpg){:width="75%"}
-
-{:start="6"}
-6. That's it. Save it with a name of your choosing. It will appear in your print dialog drop-down menu. 
+{:start="4"}
+6. Save the workflow with a name of your choosing. It will appear in your print dialog drop-down menu. 
