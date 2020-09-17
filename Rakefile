@@ -50,7 +50,6 @@ namespace :git do
     puts "Adding .gitignore to root"
     File.open(File.join('.gitignore'), 'w') do |f|
   	f.puts ".DS_Store"
-    f.puts "node_modules/"
 	end
 
     unless git_clean?
