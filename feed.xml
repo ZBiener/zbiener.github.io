@@ -7,7 +7,7 @@
     <atom:link href="https://zbiener.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>This websites auto-generates from a BibTex file. See how.</title>
+        <title>How to generate a website CV from a plain text BibTex file</title>
         <description>
           
           The Publications &amp;amp; Talk and Teaching portions of this website auto-generate from BibTex files. That means that I didn’t input the information directly into any pre-formatted website page template. Rather, I keep a list of my publication, talks, and classes I’ve taught in BibTex format (as I would any other...
