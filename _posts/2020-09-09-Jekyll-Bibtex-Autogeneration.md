@@ -1,10 +1,9 @@
 ---
 title: "How to generate a website CV from a plain text BibTex file"
-date: 2020-09-09 
+date: 2020-09-09
 image: '/images/moveabletype.jpg'
 excerpt: "Barebones tutorial on how to automatically generate publications lists on a website from a BibTex file"
 categories: 
-  - BibTex
   - Jekyll
   - BibDesk
 ---
