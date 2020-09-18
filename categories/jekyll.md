@@ -1,11 +1,11 @@
 ---
 layout: post_list
-title:  BibDesk Posts
-permalink: /blog/bibdesk
-image: '/images/carl_spitzweg.jpg'
+title:  Jekyll Posts
+permalink: /blog/jekyll
+image: '/images/broom1.jpg'
 pagination: 
   enabled: true
-  category: bibdesk
+  category: jekyll
   permalink: /:num/
   sort_field: 'date'
   sort_reverse: true

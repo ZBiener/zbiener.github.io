@@ -5,7 +5,6 @@ image: '/images/broom1.jpg'
 excerpt: Home Assistant is an open source home automation platform that puts local control and privacy first. It can be controlled through a browser or though android and iOS apps. I have mine running on a Raspberry Pi.  I use Home Assistant to...
 categories:
   - Home Assistant
-  - Xiaomi
 ---
 
 [Home Assistant](https://www.home-assistant.io/) is an open source home automation platform that puts local control and privacy first. It can be controlled through a browser, or though android and iOS apps. It can run on a variety of PCs - I have mine running on a Raspberry Pi. I've posted my configuration files - just keep reading.

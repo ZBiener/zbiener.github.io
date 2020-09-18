@@ -5,7 +5,7 @@ image: '/images/hay.jpeg'
 excerpt: If you use [Alfred](https://www.alfredapp.com/) (see [here](/blog/everything-in-its-place "Alfred Post")) and [BibDesk](https://bibdesk.sourceforge.io/ "Optional Title3") (see [here](blog/bibliographies "Bibdesk Post")), you might find the following useful. The script below uses Alfred's "Workflow" feature. It provides a set of commands to search bibliographical entries directly from Alfred, and execute a variety of actions related to citing, opening PDFs, narrowing searches, etc.
 categories:
   - Alfred
-  - Bibdesk
+  - BibDesk
   - Academic Tools
 ---
 

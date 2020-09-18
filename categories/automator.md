@@ -1,11 +1,11 @@
 ---
 layout: post_list
-title:  BibDesk Posts
-permalink: /blog/bibdesk
-image: '/images/carl_spitzweg.jpg'
+title:  Automator Posts
+permalink: /blog/automator
+image: '/images/broom1.jpg'
 pagination: 
   enabled: true
-  category: bibdesk
+  category: automator
   permalink: /:num/
   sort_field: 'date'
   sort_reverse: true

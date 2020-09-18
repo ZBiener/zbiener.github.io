@@ -5,7 +5,7 @@ revised: 2019-10-1
 image: '/images/carl_spitzweg.jpg'
 excerpt: "Bibliographies for small projects are easy. But they are complicated and time-consuming for larger projects. You should use a bibliography manager. Like BibDesk. It is open-source and easy"
 categories:
-  - Bibdesk
+  - BibDesk
   - Academic Tools
 ---
 Bibliographies for small projects are easy. But they are complicated and time-consuming for larger projects. You should use a bibliography manager. [Zotero](https://www.zotero.org/ "Zotero") is free and flexible. [Papers](https://www.papersapp.com/) is swanky but overrated (IMO). I discuss BibDesk below. It is open-source, easy, and very configurable. 

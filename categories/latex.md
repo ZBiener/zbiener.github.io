@@ -1,11 +1,11 @@
 ---
 layout: post_list
-title:  BibDesk Posts
-permalink: /blog/bibdesk
-image: '/images/carl_spitzweg.jpg'
+title:  LaTeX Posts
+permalink: /blog/latex
+image: '/images/moveabletype.jpg'
 pagination: 
   enabled: true
-  category: bibdesk
+  category: latex
   permalink: /:num/
   sort_field: 'date'
   sort_reverse: true
