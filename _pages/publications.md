@@ -40,12 +40,12 @@ target: .collapse.citation, .collapse.abstract, .collapse.bibtex, .collapse.full
 </div>
 
 {% capture numItems %}
-{% bibliography_count -q @unpublished[Eventtitle!=""] -q @unpublished %}
+{% bibliography_count --file talks.bib -q @unpublished[Eventtitle!=""] -q @unpublished %}
 {% endcapture %}
 
 <h2 class="bibliography" style="counter-reset:bibitem {{numItems|plus:1}}">
 	<a class="plus-icon minus" data-toggle="collapse"  data-target=".collapse.talks" data-text="Collapse">Selected Talks & Presentations</a></h2>
 
 <div class="collapse talks show">
-{% bibliography -q @unpublished[Eventtitle!=""] --template bib_item_talk %}
+{% bibliography --file talks.bib -q @unpublished[Eventtitle!=""] --template bib_item_talk %}
 </div>
