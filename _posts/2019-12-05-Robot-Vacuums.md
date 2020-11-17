@@ -33,7 +33,7 @@ I may compose detailed installation guides in the future, but there are many alr
 
 This is the basic setup. Now you need to define entities and actions for Home Assistant to manage, as well as a GUI of your choosing. So... instead of full-blown tutorials, I wanted to post my configuration files.
 
-I'll focus on the vacuums for now. Most of the underlying configuration is found [here](https://github.com/ZBiener/HomeAssistant-Config/blob/master/packages/vacuum.yaml). Like all Home Assistant config files, it is a YAML file that defines sensors, input variables, scripts, and automations. Basically, it creates a list of rooms given a coordinate system, and a list of conditions under which the vacuums run. In total, the system:
+I'll focus on the vacuums for now. Most of the underlying configuration is found [here](https://github.com/ZBiener/home-assistant.config/blob/master/packages/vacuum.yaml). Like all Home Assistant config files, it is a YAML file that defines sensors, input variables, scripts, and automations. Basically, it creates a list of rooms given a coordinate system, and a list of conditions under which the vacuums run. In total, the system:
 
 + lets me send a vacuum to any given room using the GUI
 + will run the vacuums when the house is empty, but only once in a 36 hours period.
