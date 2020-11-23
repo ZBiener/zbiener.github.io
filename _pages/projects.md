@@ -1,7 +1,7 @@
 ---
-title: Research
+title: Projects
 description: Projects
-subtitle: What I've een working on lately.
+subtitle: What I've been working on lately.
 image: /images/MS-ADD-03965-013-00113-422r.jpg
 toggle: hideall
 notitle: true

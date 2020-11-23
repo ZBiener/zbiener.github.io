@@ -22,17 +22,23 @@
 	}
 
 	.wrap {
-
+		padding-bottom: .3em;
+		background: $background_color;
 		@include mq(tabletl) {
 			max-width: $tablelt-width;
+			padding-bottom: .4em;
 		}
 
 		@include mq(laptop) {
 			max-width: $laptop-width;
+			padding-bottom: .6em;
+
 		}
 
 		@include mq(desktop) {
 			max-width: $desktop-width;
+			padding-bottom: 1em;
+
 		}
 	}
 	
