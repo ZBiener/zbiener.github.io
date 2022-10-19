@@ -18,7 +18,7 @@ menu_settings:
       url: '/publications/'
     - title: 'Teaching'
       url: '/teaching/'
-    - title: 'Blog'
+    - title: 'Tech'
       url: '/blog/'
     - title: 'CV'
       url: '/cv/'
