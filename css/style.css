@@ -2341,7 +2341,7 @@ section {
 }
 .item_details blockquote img {
   float: right;
-  max-width: 20%;
+  max-width: 16%;
   margin: 0.1em 0 2em 1em;
   border-radius: 2%;
   border: 1px solid rgba(0, 0, 0, 0.13);
