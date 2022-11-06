@@ -4,153 +4,218 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "99BE6408-6DC9-4E02-BF16-60980981BBE1"
+		"uuidString": "EE01EE4B-1739-4DC6-9E0F-FA9494960BB8"
 		}
 	],
 "creatorBuild": "31934",
 "files": {
-	"/custom_js-min.js": {
-		"bF": 0,
-		"ft": 64,
+	"/_basic.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
 		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/custom_js-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/custom_js.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/custom_js-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/journal-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
 		"oA": 1,
-		"oAP": "/journal-min-min.js",
+		"oAP": "/_basic.css",
 		"oF": 0,
-		"sC": 3,
-		"tS": 0
+		"oS": 0,
+		"uL": 1
 		},
-	"/journal.js": {
-		"bF": 0,
-		"ft": 64,
+	"/_bibliography.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
 		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/journal-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/plugins/breakpoints-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
 		"oA": 1,
-		"oAP": "/plugins/breakpoints-min-min.js",
+		"oAP": "/_bibliography.css",
 		"oF": 0,
-		"sC": 3,
-		"tS": 0
+		"oS": 0,
+		"uL": 1
 		},
-	"/plugins/breakpoints.js": {
-		"bF": 0,
-		"ft": 64,
+	"/_customization.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
 		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/plugins/breakpoints-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/plugins/debounce.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
 		"oA": 1,
-		"oAP": "/plugins/debounce-min.js",
+		"oAP": "/_customization.css",
 		"oF": 0,
-		"sC": 3,
-		"tS": 0
+		"oS": 0,
+		"uL": 1
 		},
-	"/plugins/fluidbox.js": {
-		"bF": 0,
-		"ft": 64,
+	"/_frontpage.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
 		"ma": 0,
-		"mi": 1,
 		"oA": 1,
-		"oAP": "/plugins/fluidbox-min.js",
+		"oAP": "/_frontpage.css",
 		"oF": 0,
-		"sC": 3,
-		"tS": 0
+		"oS": 0,
+		"uL": 1
 		},
-	"/plugins/history.js": {
-		"bF": 0,
-		"ft": 64,
+	"/_includes/_blog.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
 		"ma": 0,
-		"mi": 1,
 		"oA": 1,
-		"oAP": "/plugins/history-min.js",
+		"oAP": "/_includes/_blog.css",
 		"oF": 0,
-		"sC": 3,
-		"tS": 0
+		"oS": 0,
+		"uL": 1
 		},
-	"/plugins/imagesloaded.js": {
-		"bF": 0,
-		"ft": 64,
+	"/_includes/_contact-form.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
 		"ma": 0,
-		"mi": 1,
 		"oA": 1,
-		"oAP": "/plugins/imagesloaded-min.js",
+		"oAP": "/_includes/_contact-form.css",
 		"oF": 0,
-		"sC": 3,
-		"tS": 0
+		"oS": 0,
+		"uL": 1
 		},
-	"/plugins/masonry.js": {
-		"bF": 0,
-		"ft": 64,
+	"/_includes/_content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
 		"ma": 0,
-		"mi": 1,
 		"oA": 1,
-		"oAP": "/plugins/masonry-min.js",
+		"oAP": "/_includes/_content.css",
 		"oF": 0,
-		"sC": 3,
-		"tS": 0
+		"oS": 0,
+		"uL": 1
 		},
-	"/plugins/owl.js": {
-		"bF": 0,
-		"ft": 64,
+	"/_includes/_footer.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
 		"ma": 0,
-		"mi": 1,
 		"oA": 1,
-		"oAP": "/plugins/owl-min.js",
+		"oAP": "/_includes/_footer.css",
 		"oF": 0,
-		"sC": 3,
-		"tS": 0
+		"oS": 0,
+		"uL": 1
 		},
-	"/plugins/waypoints.js": {
-		"bF": 0,
-		"ft": 64,
+	"/_includes/_gallery.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
 		"ma": 0,
-		"mi": 1,
 		"oA": 1,
-		"oAP": "/plugins/waypoints-min.js",
+		"oAP": "/_includes/_gallery.css",
 		"oF": 0,
-		"sC": 3,
-		"tS": 0
+		"oS": 0,
+		"uL": 1
+		},
+	"/_includes/_header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_includes/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/_includes/_portfolio.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_includes/_portfolio.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/_includes/_socials.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_includes/_socials.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/_includes/_syntax(unused).scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_includes/_syntax(unused).css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/_mixins.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/_plugins.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_plugins.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/_reset.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_reset.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		}
 	},
 "hooks": [
@@ -158,12 +223,11 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 596476352.01177895,
-	"displayValue": "js",
-	"displayValueWasSetByUser": 1,
-	"iconImageName": "brackets_magenta",
-	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 689375156.98672402
+	"creationDate": 689359342.63863003,
+	"displayValue": "_sass",
+	"displayValueWasSetByUser": 0,
+	"iconImageName": "brackets-payne",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
