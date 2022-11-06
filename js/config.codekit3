@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "31934",
 "files": {
+	"/build/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/.gitignore",
+		"oF": 0
+		},
 	"/custom_js-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -163,7 +171,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_magenta",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 689375156.98672402
+	"lastBuiltDate": 689444453.80940497
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
