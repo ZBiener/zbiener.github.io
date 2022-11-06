@@ -33,6 +33,7 @@
 {% elsif links.pic %}{% assign pic = links.pic %}
 {% elsif links.tiff %}{% assign pic = links.tiff %}
 {% endif %}
+
 <div id="{{key}}-links" class="biblinks clearfix">
   <ul>
     {% if link %}
@@ -47,29 +48,30 @@
     {% if entry.url AND !entry.doi %}
     <li><a href="http://doi.org/{{entry.url}}" target="_blank">Published version</a></li>
     {% endif %}
-    <li><a data-toggle="collapse" data-target=".collapse.{{key}}.citation" style="cursor: zoom-in">Full Cite</a></li>
-    <li><a data-toggle="collapse" data-target=".collapse.{{key}}.bibtex" style="cursor: zoom-in">BibTeX</a></li>
+    <li><a data-toggle="collapse" data-target="#{{key}}-bibtex" data-parent="#{{key}}-info" style="cursor: zoom-in">BibTeX</a></li>
+    <li><a data-toggle="collapse" data-target="#{{key}}-citation" data-parent="#{{key}}-info" style="cursor: zoom-in">Full Cite</a></li>
     {% if entry.abstract %}
 
-    <li><a data-toggle="collapse"  data-target=".collapse.{{key}}.abstract" style="cursor: zoom-in">Abstract</a></li>
+    <li><a data-toggle="collapse"  data-target="#{{key}}-abstract" data-parent="#{{key}}-info" style="cursor: zoom-in">Abstract</a></li>
     {% endif %}
   </ul>
 </div>
 
-<div class="item_details clearfix">
-  <div name="{{key}}-bibtex" class="pre collapse {{key}} bibtex">
+<div id="{{key}}-info" class="item_details clearfix">
+  <blockquote> {% if pic != "false" %}<img src="{{ pic }}">{% endif %}
+  <div id="{{key}}-bibtex" name="{{key}}-bibtex" class="pre collapse {{key}} bibtex">
     <pre >{{entry.bibtex}}</pre>
   </div>
-  <div name="{{key}}-citation" class="collapse {{key}} citation"> 
+  <div id="{{key}}-citation" name="{{key}}-citation" class="collapse {{key}} citation"> 
     <p>{{reference}}</p>
   </div>
   {% if entry.abstract %}
-  <div name="{{key}}-abstract" class="abstract collapse show {{key}} abstract">
-    <blockquote> {% if pic != "false" %}<img src="{{ pic }}">{% endif %}{{entry.abstract}}</blockquote>
+  <div id="{{key}}-abstract" name="{{key}}-abstract" class="abstract collapse show {{key}} abstract">
+    {{entry.abstract}}
   </div>
   {% else %}
   <div>&nbsp;</div>
   {% endif %}
-
+</blockquote>
 </div>
 </div>
