@@ -2304,6 +2304,7 @@ section {
   overflow: hidden;
   margin-bottom: .5em;
   font-size: calc(14px - 1px);
+  color: #4a4a4a !important;
 }
 .item_details * {
   overflow: hidden;
@@ -2311,10 +2312,7 @@ section {
 .item_details p {
   max-width: 100%;
   font-size: calc(14px - 1px);
-  color: black;
-  margin-top: 1em;
   margin-bottom: 1em;
-  padding-left: 25px;
 }
 .item_details p.subtitle {
   color: #fcfbf8;
@@ -2327,24 +2325,16 @@ section {
   color: #fcfbf8 !important;
 }
 .item_details pre {
-  padding: 9.5px;
-  margin: 1em 0 .3em;
-  font-size: calc(14px - 1px);
+  font-size: calc(calc(14px - 1px) - 1px);
   line-height: 1.42857143;
-  color: #333;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #f5f5f5;
-  border: 1px solid #ccc;
-  border-radius: 4px;
   max-height: 300px;
-  overflow-y: scroll;
   overflow-x: scroll;
 }
 .item_details blockquote {
   font-family: "Raleway", sans-serif;
-  color: #808080;
-  padding-left: 20px;
+  padding-left: 15px;
   margin-top: 1em !important;
   border-left: 5px solid #eee;
   font-size: calc(14px - 1px);
@@ -2355,6 +2345,13 @@ section {
   margin: 0.1em 0 2em 1em;
   border-radius: 2%;
   border: 1px solid rgba(0, 0, 0, 0.13);
+}
+.item_details blockquote div.bibtex, .item_details blockquote div.abstract, .item_details blockquote div.citation {
+  padding: 0em !important;
+  margin: 0em !important;
+}
+.item_details blockquote div.bibtex p, .item_details blockquote div.abstract p, .item_details blockquote div.citation p {
+  margin-left: 0px !important;
 }
 
 p.date {
@@ -2544,11 +2541,9 @@ a.plus-icon.minus:before {
   overflow: hidden;
   margin-left: -2em;
   padding-left: 2em;
-  transition: max-height 0.6s cubic-bezier(0, 1, 0, 1);
 }
 .collapse.show {
   max-height: 500em;
-  transition: max-height .6s ease-in-out;
 }
 
 .frontpage .container {
