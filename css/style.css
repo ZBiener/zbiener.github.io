@@ -2297,7 +2297,6 @@ section {
 .bibliography a.title, .item_content a.title {
   color: #2A2F36 !important;
   font-weight: bold !important;
-  cursor: alias;
 }
 
 .item_details {
@@ -2352,6 +2351,12 @@ section {
 }
 .item_details blockquote div.bibtex p, .item_details blockquote div.abstract p, .item_details blockquote div.citation p {
   margin-left: 0px !important;
+}
+.item_details .collapse {
+  transition: 0s !important;
+}
+.item_details .collapse.show {
+  transition: 0s !important;
 }
 
 p.date {
@@ -2541,9 +2546,11 @@ a.plus-icon.minus:before {
   overflow: hidden;
   margin-left: -2em;
   padding-left: 2em;
+  transition: max-height 0.6s cubic-bezier(0, 1, 0, 1);
 }
 .collapse.show {
   max-height: 500em;
+  transition: max-height .6s ease-in-out;
 }
 
 .frontpage .container {
