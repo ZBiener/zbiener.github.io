@@ -91,35 +91,30 @@ window.addEventListener('click', (ev) => {
     const elm = ev.target;
     if (triggers.includes(elm)) {
         const selector = elm.getAttribute('data-target');
-        const parentSelector = elm.getAttribute('data-parent'); // "#mygroup"
-        console.log("selector", selector);
-        console.log("parentSelector:", parentSelector);
+        const parentSelector = elm.getAttribute('data-parent'); 
+        const parent = document.querySelector(elm.getAttribute('data-parent')); 
+        if (parent) {
+            var childDivs = parent.getElementsByClassName('collapse');
+        
+            //console.log("childDivs:", childDivs)
+    
+            for( var i=0; i< childDivs.length; i++ )
+            {
+            var childSelector = "#" + childDivs[i].id;
+            collapse(childSelector, 'hide');
+            }
+        }   
 
-        const parent = document.querySelector(elm.getAttribute('data-parent')); //div id="my group"
-        console.log("parent:", parent);
-
-        var childDivs = parent.getElementsByClassName('collapse');
-        console.log("childDivs:", childDivs)
-
-        for( var i=0; i< childDivs.length; i++ )
-        {
-        console.log("childDivs[i].id", childDivs[i].id); // the id without #
-        var childSelector = "#" + childDivs[i].id;
-        console.log("childSelector", childSelector);
-
-        collapse(childSelector, 'hide');
-        }
-
-        console.log('past for loop');
         collapse(selector, 'toggle');
-        /*if (elm.classList.contains('minus')) {
+
+        if (elm.classList.contains('minus')) {
             setTimeout(function() {
                 elm.classList.remove('minus');
             }, timeout);
 
         } else {
             elm.classList.add('minus');
-        }*/
+        }
 
     }
     // terrible logic, for selectively collapsing elements page
