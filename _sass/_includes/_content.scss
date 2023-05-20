@@ -58,7 +58,7 @@
 .single {
 	margin-top: 0;
 	padding: 0 px 0;
-	min-height: 100vh;
+	min-height: 80vh;
 
 	@include mq(tabletp) {
 		padding: 0px 0;
