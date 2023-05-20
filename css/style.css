@@ -1381,7 +1381,7 @@ section {
 .footer__copyright {
   display: block;
   font-size: 13px;
-  color: #fcfbf8;
+  color: #474747;
 }
 @media only screen and (min-width: 1024px) {
   .footer__copyright {
@@ -1394,8 +1394,8 @@ section {
   }
 }
 .footer__copyright a {
-  margin-left: 10px;
-  color: #fcfbf8;
+  margin-left: 1px;
+  color: #474747;
   font-weight: 400;
 }
 .footer__copyright a:hover {
@@ -2621,7 +2621,7 @@ a {
 .footer__copyright {
   text-align: right;
   font-size: 7pt;
-  color: #fcfbf8;
+  color: #474747;
   line-height: 1.2;
   margin: auto;
 }
