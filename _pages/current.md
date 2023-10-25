@@ -1,6 +1,6 @@
 ---
 title: Current Courses
-description: Zvi Biener - Teaching
+description: Chris Smeenk - Teaching
 image: /images/british_m.jpeg
 notitle: true
 toggle: hideall

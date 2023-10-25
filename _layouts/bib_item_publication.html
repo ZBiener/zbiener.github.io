@@ -7,10 +7,10 @@
 
 <div id="{{key}}-fullentry" class="collapse {{ entry.key }} fullentry show">
 {% if entry.author contains "and" %}
-(with {{ entry.author | remove: "Zvi" | remove: "Biener, " | remove_first: "and "}})<br>
+(with {{ entry.author | remove: "Smeenk, Chris and " | remove: " and Smeenk, Chris"}})<br>
 {% elsif entry.editor contains "and" %}
-  {% unless entry.author == "Biener, Zvi" %}
-(with {{ entry.editor | remove: "Zvi" | remove: "Biener, " | remove_first: "and "}})<br>
+  {% unless entry.author == "Smeenk, Chris" %}
+(with {{ entry.editor | remove: "Smeenk, Chris and " | remove: " and Smeenk, Chris"}})<br>
   {% endunless %}
 {% endif %}
 

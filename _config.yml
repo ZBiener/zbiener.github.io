@@ -1,9 +1,9 @@
-site: Zvi Biener
-title: Zvi Biener
+site: Chris Smeenk
+title: Chris Smeenk
 
-url: https://zbiener.github.io
+url: https://cjsmeenk.github.io
 baseurl: 
-disqus: zbiener
+disqus: cjsmeenk
 
 collections:
   pages:

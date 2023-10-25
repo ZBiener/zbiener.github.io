@@ -1,7 +1,7 @@
 ---
 title: Teaching
 description: Zvi Biener - Teaching
-image: /images/british_m.jpeg
+image: /images/CathedralofLearning.jpeg
 notitle: true
 toggle: hideall
 target: .collapse.fullentry, collapse.grad, collapse.undergrad

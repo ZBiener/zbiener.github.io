@@ -1,13 +1,15 @@
  ## Extra Customization Data. 
 
-biener:
-  name: Zvi Biener
-  title: Associate Professor
-  affiliation: University of Cincinnati
+smeenk:
+  name: Chris Smeenk
+  title: Professor
+  affiliation: University of Western Ontario
   address: 
-    - 5253 Clifton Court Hall
-    - Cincinnati OH, 45219
-  orcid: 0000-0002-3863-205X
-  cv: files/biener-cv
-  email: zvi.biener@uc.edu
-  philpapers_url: 'https://philpeople.org/profiles/zvi-biener/'
+    - 7178 WIRB
+    - Rotman Institute of Philosophy
+    - 1151 Richmond St. N.
+    - London  ON  N6A 5B7
+  orcid: 0000-0002-6101-0048
+  cv: files/SmeenkCV
+  email: csmeenk2@uwo.ca
+  philpapers_url: 'https://philpeople.org/profiles/chris-smeenk'

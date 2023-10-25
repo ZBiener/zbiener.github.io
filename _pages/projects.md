@@ -2,7 +2,7 @@
 title: Projects
 description: Projects
 subtitle: What I've been working on lately.
-image: /images/MS-ADD-03965-013-00113-422r.jpg
+image: /images/NDPC.jpg
 toggle: hideall
 notitle: true
 target: .collapse.project
